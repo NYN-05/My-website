@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>About Us</title>
+      <style>
+         /* Global Styles */
+         body {
+         background-color: #FFFFFF;
+         font-family: Arial, sans-serif;
+         }
+         body {
+         background-color: #FFFFFF;
+         /* White background */
+         font-family: Arial, sans-serif;
+         /* Font family */
+         }
+         /* Navigation Bar CSS */
+         .navbar {
+         background-color: #FF5733;
+         /* Saffron background */
+         padding: 10px;
+         /* Add padding to the navigation bar */
+         text-align: center;
+         /* Center the navigation links */
+         }
+         .navbar a {
+         color: #FFFFFF;
+         /* White link color */
+         margin: 0 10px;
+         /* Add margin to the navigation links */
+         }
+         .navbar a:hover {
+         color: #F2C464;
+         /* Light Saffron link color on hover */
+         }
+         /* Heading CSS */
+         .heading-container {
+         text-align: center;
+         margin-top: 20px;
+         }
+         .heading-container img {
+         width: 5%;
+         height: auto;
+         object-fit: cover;
+         border-radius: 10px;
+         margin-right: 10px;
+         vertical-align: middle;
+         }
+         .heading-container h1 {
+         color: #FF5733;
+         /* Saffron heading color */
+         display: inline-block;
+         vertical-align: middle;
+         }
+         /* About Page CSS */
+         .about-section {
+         padding: 20px;
+         background-color: #FFFFFF;
+         border: 1px solid #FF5733;
+         margin-top: 20px;
+         }
+         .about-text {
+         font-size: 18px;
+         color: #666;
+         }
+         .about-team {
+         margin-top: 20px;
+         padding: 20px;
+         background-color: #FFFFFF;
+         border: 1px solid #FF5733;
+         }
+         .team-member {
+         margin: 10px;
+         padding: 10px;
+         border: 1px solid #FF5733;
+         width: 200px;
+         }
+         .team-members {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .team-member img {
+         width: 100%;
+         height: 150px;
+         object-fit: cover;
+         border-radius: 10px;
+         }
+         .team-member h3 {
+         font-weight: bold;
+         margin-bottom: 10px;
+         }
+         .team-member p {
+         font-size: 18px;
+         color: #666;
+         }
+         /* Paragraph CSS */
+         p {
+         color: #333;
+         /* Dark gray text color */
+         padding: 20px;
+         }
+         /* Footer CSS */
+         .footer {
+         background-color: #FF5733;
+         /* Saffron background */
+         padding: 10px;
+         /* Add padding to the footer */
+         text-align: center;
+         /* Center the footer text */
+         color: #FFFFFF;
+         /* White text color */
+         }
+         .footer a {
+         color: #FFFFFF;
+         /* White link color */
+         margin: 0 10px;
+         /* Add margin to the footer links */
+         }
+         .footer a:hover {
+         color: #F2C464;
+         /* Light Saffron link color on hover */
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navigation Bar -->
+      <div class="navbar">
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="#contact">Contact</a>
+      </div>
+      <div class="heading-container">
+         <img src="https://media.istockphoto.com/id/1442080471/vector/information-icon-vector-illustration-about-info-information-help-support-faq-service-details.jpg?s=612x612&w=0&k=20&c=h4svZdZXfGT4FpawiPt9g-osWIuYiSaiklU14cV664U=" alt="About Us">
+         <h1 id="heading">About Us</h1>
+      </div>
+      <div class="about-section">
+         <p class="about-text">Discover a world of shopping at your fingertips. We offer a curated collection of [products] designed to elevate your lifestyle. Experience seamless browsing, secure checkout, and fast delivery. Your satisfaction is our priority. Join us on this shopping adventure today!</p>
+      </div>
+      <div class="about-team">
+         <h2>Meet Our Team</h2>
+         <div class="team-members">
+            <div class="team-member">
+               <img src="team-member1.jpg" alt="Team Member 1">
+               <h3>John Doe</h3>
+               <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+               <img src="team-member2.jpg" alt="Team Member 2">
+               <h3>Jane Doe</h3>
+               <p>Marketing Manager</p>
+            </div>
+            <div class="team-member">
+               <img src="team-member3.jpg" alt="Team Member 3">
+               <h3>Bob Smith</h3>
+               <p>Developer</p>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <p>&copy; 2023 About Us</p>
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#contact">Contact</a>
+      </div>
+      <script>
+         // Add JavaScript code here
+         const heading = document.getElementById('heading');
+         const navbarLinks = document.querySelectorAll('.navbar a');
+         
+         // Add event listener to the heading
+         heading.addEventListener('click', function() {
+           // Handle heading click event
+           console.log('Heading clicked! ');
+         });
+         
+         // Add event listener to the navbar links
+         navbarLinks.forEach(function(navbarLink) {
+           navbarLink.addEventListener('click', function() {
+             // Handle navbar link click event
+             console.log('Navbar link clicked! ');
+           });
+         });
+         
+         // Add event listener to the team members
+         const teamMembers = document.querySelectorAll('.team-member');
+         teamMembers.forEach(function(teamMember) {
+           teamMember.addEventListener('click', function() {
+             // Handle team member click event
+             console.log('Team member clicked! ');
+           });
+         });
+      </script>
+   </body>
+</html>

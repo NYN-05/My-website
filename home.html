@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Home</title>
+      <style>
+         /* Global Styles */
+         body {
+         background-color: #FFFFFF;
+         /* White background */
+         font-family: Arial, sans-serif;
+         /* Font family */
+         }
+         /* Navigation Bar CSS */
+         .navbar {
+         background-color: #FF5733;
+         /* Saffron background */
+         padding: 10px;
+         /* Add padding to the navigation bar */
+         text-align: center;
+         /* Center the navigation links */
+         }
+         .navbar a {
+         color: #FFFFFF;
+         /* White link color */
+         margin: 0 10px;
+         /* Add margin to the navigation links */
+         }
+         .navbar a:hover {
+         color: #F2C464;
+         /* Light Saffron link color on hover */
+         }
+         /* Heading CSS */
+         h1 {
+         color: #FF5733;
+         /* Saffron heading color */
+         text-align: center;
+         /* Center the heading */
+         }
+         /* Paragraph CSS */
+         p {
+         color: #333;
+         /* Dark gray text color */
+         padding: 20px;
+         /* Add padding to paragraphs */
+         }
+         /* Link CSS */
+         a {
+         text-decoration: none;
+         /* Remove underline from links */
+         color: #FF5733;
+         /* Saffron link color */
+         }
+         a:hover {
+         color: #F2C464;
+         /* Light Saffron link color on hover */
+         }
+         /* Button CSS */
+         button {
+         color: #333;
+         /* Dark gray text color */
+         background-color: #FF5733;
+         /* Saffron background */
+         border: none;
+         /* Remove border */
+         padding: 10px 20px;
+         /* Add padding */
+         cursor: pointer;
+         /* Change cursor to pointer */
+         }
+         button:hover {
+         background-color: #F2C464;
+         /* Light Saffron background on hover */
+         }
+         /* Comment Section CSS */
+         .comment-section {
+         padding: 20px;
+         background-color: #FFFFFF;
+         border: 1px solid #FF5733;
+         margin-top: 20px;
+         }
+         .comment {
+         padding: 10px;
+         border-bottom: 1px solid #FF5733;
+         }
+         .comment-author {
+         font-weight: bold;
+         color: #333;
+         }
+         .comment-text {
+         color: #666;
+         }
+         .comment-form {
+         padding: 10px;
+         background-color: #FFFFFF;
+         border: 1px solid #FF5733;
+         margin-top: 20px;
+         }
+         .comment-form input[type="text"] {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 10px;
+         border: 1px solid #FF5733;
+         }
+         .comment-form textarea {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 10px;
+         border: 1px solid #FF5733;
+         }
+         .comment-form button[type="submit"] {
+         padding: 10px 20px;
+         background-color: #FF5733;
+         border: none;
+         cursor: pointer;
+         }
+         .comment-form button[type="submit"]:hover {
+         background-color: #F2C464;
+         }
+         /* Items Section CSS */
+         .items-section {
+         margin-top: 20px;
+         padding: 20px;
+         background-color: #FFFFFF;
+         border: 1px solid #FF5733;
+         }
+         .items-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         }
+         .item {
+         margin: 10px;
+         padding: 10px;
+         border: 1px solid #FF5733;
+         width: 200px;
+         }
+         .item img {
+         width: 100%;
+         height: 150px;
+         object-fit: cover;
+         border-radius: 10px;
+         }
+         .item h3 {
+         font-weight: bold;
+         margin-bottom: 10px;
+         }
+         .item p {
+         font-size: 18px;
+         color: #666;
+         }
+         /* Footer CSS */
+         .footer {
+         background-color: #FF5733;
+         /* Saffron background */
+         padding: 10px;
+         /* Add padding to the footer */
+         text-align: center;
+         /* Center the footer text */
+         color: #FFFFFF;
+         /* White text color */
+         }
+         .footer a {
+         color: #FFFFFF;
+         /* White link color */
+         margin: 0 10px;
+         /* Add margin to the footer links */
+         }
+         .footer a:hover {
+         color: #F2C464;
+         /* Light Saffron link color on hover */
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Navigation Bar -->
+      <div class="navbar">
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="#contact">Contact</a>
+      </div>
+      <h1 id="heading">Welcome to NAYAN store</h1>
+      <p id="paragraph">Discover a world of possibilities at your fingertips.<br>
+         Shop your heart out with just a click.<br>
+         Fast, convenient, and secure online shopping.
+      </p>
+      <p>Visit <a href="#" id="link">About</a> for more information.</p>
+      <button id="button">Click me!</button>
+      <div class="items-section">
+         <h2>Items</h2>
+         <div class="items-container">
+            <div class="item">
+               <img src="item1.jpg" alt="Item 1">
+               <h3>Item 1</h3>
+               <p>Price: $10.99</p>
+            </div>
+            <div class="item">
+               <img src="item2.jpg" alt="Item 2">
+               <h3>Item 2</h3>
+               <p>Price: $19.99</p>
+            </div>
+            <div class="item">
+               <img src="item3.jpg" alt="Item 3">
+               <h3>Item 3</h3>
+               <p>Price: $29.99</p>
+            </div>
+         </div>
+      </div>
+      <!-- Comment Section -->
+      <div class="comment-section">
+         <h2>Comments</h2>
+         <div class="comment">
+            <span class="comment-author">John Doe</span>
+            <p class="comment-text">This is a sample comment.</p>
+         </div>
+         <div class="comment">
+            <span class="comment-author">Jane Doe</span>
+            <p class="comment-text">This is another sample comment.</p>
+         </div>
+         <div class="comment-form">
+            <h2>Leave a Comment</h2>
+            <form>
+               <input type="text" placeholder="Name">
+               <textarea placeholder="Comment"></textarea>
+               <button type="submit">Submit</button>
+            </form>
+         </div>
+      </div>
+      <div class="footer">
+         <p>&copy; 2023 NAYAN stores</p>
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#contact">Contact</a>
+      </div>
+      <script>
+         // Add JavaScript code here
+         const heading = document.getElementById('heading');
+         const paragraph = document.getElementById('paragraph');
+         const link = document.getElementById('link');
+         const button = document.getElementById('button');
+         const navbarLinks = document.querySelectorAll('.navbar a');
+         
+         // Add event listener to the heading
+         heading.addEventListener('click', function() {
+           // Handle heading click event
+           console.log('Heading clicked!');
+         });
+         
+         // Add event listener to the link
+         link.addEventListener('click', function() {
+           // Handle link click event
+           console.log('Link clicked!');
+         });
+         
+         // Add event listener to the button
+         button.addEventListener('click', function() {
+           // Handle button click event
+           console.log('Button clicked!');
+         });
+         
+         // Add event listener to the navbar links
+         navbarLinks.forEach(function(navbarLink) {
+           navbarLink.addEventListener('click', function() {
+             // Handle navbar link click event
+             console.log('Navbar link clicked!');
+           });
+         });
+         
+         // Add event listener to the link hover
+         link.addEventListener('mouseover', function() {
+           paragraph.textContent = 'Discover your perfect match, shop now.';
+         });
+         
+         link.addEventListener('mouseout', function() {
+           paragraph.textContent = 'Experience seamless browsing, secure checkout, and fast delivery. Your satisfaction is our priority. Join us on this shopping adventure today!';
+         });
+         
+         // Add event listener to the button hover
+         button.addEventListener('mouseover', function() {
+           heading.textContent = 'SHOP NOW !!';
+         });
+         
+         button.addEventListener('mouseout', function() {
+           heading.textContent = 'Welcome to My Webpage';
+         });
+         
+         // Add event listener to the navbar link hover
+         navbarLinks.forEach(function(navbarLink) {
+           navbarLink.addEventListener('mouseover', function() {
+             navbarLink.style.color = '#FFC107';
+           });
+         
+           navbarLink.addEventListener('mouseout', function() {
+             navbarLink.style.color = '#fff';
+           });
+         });
+         
+         // Add event listener to the comment form submission
+         const commentForm = document.querySelector('.comment-form form');
+         commentForm.addEventListener('submit', function(event) {
+           event.preventDefault();
+           const name = document.querySelector('.comment-form input[type="text"]').value;
+           const comment = document.querySelector('.comment-form textarea').value;
+           const commentHTML = `
+                <div class="comment">
+                  <span class="comment-author">${name}</span>
+                  <p class="comment-text">${comment}</p>
+                </div>
+              `;
+           document.querySelector('.comment-section').insertAdjacentHTML('beforeend', commentHTML);
+           document.querySelector('.comment-form input[type="text"]').value = '';
+           document.querySelector('.comment-form textarea').value = '';
+         });
+         // Add event listener to the items
+         const items = document.querySelectorAll('.item');
+         items.forEach(function(item) {
+           item.addEventListener('click', function() {
+             // Handle item click event
+             console.log('Item clicked!');
+           });
+         });
+         
+      </script>
+   </body>
+</html>
